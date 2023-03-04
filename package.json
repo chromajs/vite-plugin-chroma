@@ -1,0 +1,23 @@
+{
+  "name": "vite-plugin-svelte-chroma",
+  "version": "1.0.0",
+  "description": "A vite plugin that compiles .chroma files.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chromajs/vite-plugin-svelte-chroma.git"
+  },
+  "author": "ChromaJS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chromajs/vite-plugin-svelte-chroma/issues"
+  },
+  "homepage": "https://github.com/chromajs/vite-plugin-svelte-chroma#readme",
+  "dependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
