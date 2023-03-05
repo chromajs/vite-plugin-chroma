@@ -1,8 +1,36 @@
-import parse from "./parse";
+import { marked } from "marked";
+import dompurify from "dompurify";
+import { JSDOM } from "jsdom";
 
+const window = new JSDOM("").window;
+const purify = dompurify(window as unknown as Window);
+
+const chromaRegex = /<chroma>([^]*?)<\/chroma>/gi;
 const chromaFileRegex = /\.ts|\.tsx|\.html|\.svelte|\.js|\.jsx|\.vue/i;
 
-export default function plugin() {
+function parse(src: string): string {
+  const code = [...src.matchAll(chromaRegex)];
+
+  code.map((chromaReg) => {
+    const chromaString = chromaReg[0];
+
+    while (src.indexOf(chromaString) !== -1) {
+      const noTag = chromaString
+        .replace(/<chroma>/gi, "")
+        .replace(/<\/chroma>/gi, "")
+        .replace(/\t/g, "");
+
+      src = src.replace(
+        chromaString,
+        purify.sanitize(marked(noTag, { async: false }))
+      );
+    }
+  });
+
+  return src;
+}
+
+function chroma() {
   return {
     name: "vite-plugin-svelte-chroma",
 
@@ -14,7 +42,13 @@ export default function plugin() {
         };
       }
 
-      return src;
+      return {
+        code: src,
+        map: null,
+      };
     },
   };
 }
+
+exports.default = chroma
+export = chroma;

@@ -1,6 +1,6 @@
 # vite-plugin-svelte-chroma
 
-A vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.
+A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.
 
 ## Usage
 
@@ -12,9 +12,21 @@ npm install vite-plugin-svelte-chroma
 
 Edit **vite.config.js**
 
-```js
+ESModules:
+```ts
 import { defineConfig } from "vite";
 import chroma from "vite-plugin-svelte-chroma";
+
+export default defineConfig({
+    ...
+	plugins: [chroma()],
+});
+```
+
+Common JS:
+```js
+const { defineConfig } = require("vite");
+const chroma = require("vite-plugin-svelte-chroma");
 
 export default defineConfig({
     ...

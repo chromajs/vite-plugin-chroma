@@ -1,21 +1,21 @@
 {
-	"name": "vite-plugin-svelte-chroma",
-	"version": "1.0.1",
-	"description": "A vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.",
+	"name": "vite-plugin-chroma",
+	"version": "1.0.0",
+	"description": "A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.",
 	"main": "./dist/index.js",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc -d"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/chromajs/vite-plugin-svelte-chroma.git"
+		"url": "git+https://github.com/chromajs/vite-plugin-chroma.git"
 	},
 	"author": "ChromaJS",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/chromajs/vite-plugin-svelte-chroma/issues"
+		"url": "https://github.com/chromajs/vite-plugin-chroma/issues"
 	},
-	"homepage": "https://github.com/chromajs/vite-plugin-svelte-chroma#readme",
+	"homepage": "https://github.com/chromajs/vite-plugin-chroma#readme",
 	"dependencies": {
 		"dompurify": "^3.0.1",
 		"jsdom": "^21.1.0",
