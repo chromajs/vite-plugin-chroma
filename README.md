@@ -1,4 +1,4 @@
-# vite-plugin-svelte-chroma
+# vite-plugin-chroma
 
 A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.
 
