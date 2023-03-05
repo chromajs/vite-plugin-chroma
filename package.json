@@ -1,7 +1,7 @@
 {
 	"name": "vite-plugin-chroma",
-	"version": "1.0.3",
-	"description": "A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.",
+	"version": "1.0.5",
+	"description": "A plugin to integrate Chroma with Vite.",
 	"main": "./dist/index.js",
 	"scripts": {
 		"build": "tsc -d"
@@ -10,7 +10,7 @@
 		"type": "git",
 		"url": "git+https://github.com/chromajs/vite-plugin-chroma.git"
 	},
-	"author": "ChromaJS",
+	"author": "Chroma",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/chromajs/vite-plugin-chroma/issues"
