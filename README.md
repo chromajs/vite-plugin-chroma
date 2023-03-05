@@ -7,7 +7,7 @@ A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.
 Installation:
 
 ```bash
-npm install vite-plugin-svelte-chroma
+npm install vite-plugin-chroma
 ```
 
 Edit **vite.config.js**
@@ -15,7 +15,7 @@ Edit **vite.config.js**
 ESModules:
 ```ts
 import { defineConfig } from "vite";
-import chroma from "vite-plugin-svelte-chroma";
+import chroma from "vite-plugin-chroma";
 
 export default defineConfig({
     ...
@@ -26,7 +26,7 @@ export default defineConfig({
 Common JS:
 ```js
 const { defineConfig } = require("vite");
-const chroma = require("vite-plugin-svelte-chroma");
+const chroma = require("vite-plugin-chroma");
 
 export default defineConfig({
     ...
