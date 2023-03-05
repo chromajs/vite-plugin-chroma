@@ -4,6 +4,7 @@
 
 <main>
 	<chroma>
+		|
 		# Hello {name}!
 	</chroma>
 </main>
