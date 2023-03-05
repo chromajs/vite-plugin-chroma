@@ -1,6 +1,6 @@
 {
 	"name": "vite-plugin-chroma",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A Vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.",
 	"main": "./dist/index.js",
 	"scripts": {
