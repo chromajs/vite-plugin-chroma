@@ -1,23 +1,29 @@
 {
-  "name": "vite-plugin-svelte-chroma",
-  "version": "1.0.0",
-  "description": "A vite plugin that compiles .chroma files.",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chromajs/vite-plugin-svelte-chroma.git"
-  },
-  "author": "ChromaJS",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chromajs/vite-plugin-svelte-chroma/issues"
-  },
-  "homepage": "https://github.com/chromajs/vite-plugin-svelte-chroma#readme",
-  "dependencies": {
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4"
-  }
+	"name": "vite-plugin-svelte-chroma",
+	"version": "1.0.0",
+	"description": "A vite plugin that compiles HTML, Svelte, Vue, TSX, JSX, TS, JS.",
+	"main": "./src/index.ts",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chromajs/vite-plugin-svelte-chroma.git"
+	},
+	"author": "ChromaJS",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/chromajs/vite-plugin-svelte-chroma/issues"
+	},
+	"homepage": "https://github.com/chromajs/vite-plugin-svelte-chroma#readme",
+	"dependencies": {
+		"dompurify": "^3.0.1",
+		"jsdom": "^21.1.0",
+		"marked": "^4.2.12"
+	},
+	"devDependencies": {
+		"@types/dompurify": "^2.4.0",
+		"@types/jsdom": "^21.1.0",
+		"@types/marked": "^4.0.8",
+		"@types/node": "^18.14.6",
+		"typescript": "^4.9.5"
+	}
 }

@@ -1,16 +1,20 @@
-const fileRegex = /\.(chroma)$/;
+import parse from "./parse";
 
-export default function myPlugin() {
+const chromaFileRegex = /\.ts|\.tsx|\.html|\.svelte|\.js|\.jsx|\.vue/i;
+
+export default function plugin() {
   return {
-    name: 'vite-plugin-svelte-chroma',
+    name: "vite-plugin-svelte-chroma",
 
     transform(src: string, id: string) {
-      if (fileRegex.test(id)) {
+      if (chromaFileRegex.test(id)) {
         return {
-          code: src,
+          code: parse(src),
           map: null,
         };
       }
+
+      return src;
     },
   };
 }
