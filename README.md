@@ -36,3 +36,8 @@ export default defineConfig({
 	plugins: [chroma()],
 });
 ```
+
+## Example
+
+To see a working example, see the [example](https://github.com/chromajs/vite-plugin-chroma/tree/main/example#chroma---vanilla-example) directory.
+
