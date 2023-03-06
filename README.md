@@ -22,7 +22,7 @@ import chroma from "vite-plugin-chroma";
 
 export default defineConfig({
     ...
-	plugins: [chroma()],
+    plugins: [chroma()],
 });
 ```
 
@@ -33,7 +33,7 @@ const chroma = require("vite-plugin-chroma");
 
 export default defineConfig({
     ...
-	plugins: [chroma()],
+    plugins: [chroma()],
 });
 ```
 
