@@ -1,6 +1,6 @@
 {
 	"name": "@chromajs/vite-plugin-chroma",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A plugin to integrate Chroma with Vite.",
 	"main": "./dist/index.js",
 	"scripts": {
