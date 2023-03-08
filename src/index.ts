@@ -1,4 +1,4 @@
-import compile from "@chromajs/chroma-compiler";
+import compile from "@chromajs/compiler";
 
 function chroma() {
 	return {
