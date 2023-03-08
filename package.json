@@ -17,7 +17,7 @@
 	},
 	"homepage": "https://github.com/chromajs/vite-plugin-chroma#readme",
 	"dependencies": {
-		"@chromajs/chroma-compiler": "^1.0.0"
+		"@chromajs/compiler": "^1.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^18.14.6",
