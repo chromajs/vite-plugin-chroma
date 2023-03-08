@@ -1,4 +1,4 @@
-# vite-plugin-chroma
+# @chromajs/vite-plugin-chroma
 
 A plugin to integrate Chroma with Vite. Chroma let's you write markdown syntax in between `<chroma></chroma>` tags in `.ts`, `.tsx`, `.html`, `.svelte`, `.js`, `.jsx`, and `.vue` and will compile it to HTML.
 
