@@ -5,7 +5,7 @@ function chroma() {
 		name: "vite-plugin-chroma",
 
 		transform(src: string, id: string) {
-			if (/\.ts|\.tsx|\.html|\.svelte|\.js|\.jsx|\.vue/i.test(id)) {
+			if (/\.ts$|\.tsx$|\.html$|\.svelte$|\.js$|\.jsx$|\.vue$/i.test(id)) {
 				return {
 					code: compile(src),
 					map: null,
